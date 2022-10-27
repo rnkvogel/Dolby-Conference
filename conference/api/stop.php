@@ -31,19 +31,13 @@ if (curl_errno($ch1)) {
     echo 'Error:' . curl_error($ch1);
 }
 curl_close($ch1);
-//print_r($result).'<br />';
-//outputs array
+
 $accessToken = $result['access_token'];
-//echo "<br>";
-//$refreshToken= $result['refresh_token'];
-//$expiredTime= $result['expires_in'];
 
 
 $url_id = "https://comms.api.dolby.io/v1/monitor/conferences?from=0&to=9999999999999&max=100&active=true&livestats=false";
 $auth_token = 'Authorization: Bearer ' . $accessToken ;
-//echo $auth_token.'<br />';
-;
-//echo "<br>";
+
 $ch2 = curl_init();
 curl_setopt($ch2, CURLOPT_URL, $url_id);
 curl_setopt($ch2, CURLOPT_RETURNTRANSFER, 1);
@@ -65,23 +59,19 @@ if (curl_errno($ch2)) {
     echo 'Error:' . curl_error($ch2);
 }
 curl_close($ch2);
-//print_r($result2).'<br />';
-//outputs array
+
 foreach($result2['conferences'] as $key =>$value){
-//echo $key.'<br />';
+
 foreach($key['confId'] as $conf){
 
 }
 }
-//print_r($result2).'<br />';
 
 $conferencId= $result2['conferences'][$key]['confId'];
 
-//echo $conferencId.'<br />';
-//echo $credentials;
 $url_millicast = 'https://comms.api.dolby.io/v2/conferences/mix/'.$conferencId.'/lls/stop';
 $apiKey = 'Authorization: Bearer '. $accessToken;
-//echo $url_millicast.'<br />';
+
 $ch3 = curl_init();
 curl_setopt($ch3, CURLOPT_URL, $url_millicast);
 curl_setopt($ch3, CURLOPT_POST, true);
@@ -105,6 +95,5 @@ if (curl_errno($ch3)) {
 curl_close($ch3);
 print_r($result3).'<br />';
 //outputs array
-
 
 ?>
