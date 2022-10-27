@@ -1,7 +1,7 @@
 
 <?php
 require 'keys/capikeys.php';
-#need your DOLBY STREAM NAME streamName and Token
+#need your DOLBY STREAM NAME and Token
 $streamName = "YOUR_STREAM_NAME";
 $publishingToken = "YOUR_PUBLISHING_TOKEN";
 $url_vox = 'https://api.voxeet.com/v1/auth/token';
