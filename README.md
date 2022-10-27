@@ -28,6 +28,7 @@ You will want update the api/keys/sapi/sapikeys.php with your Streaming API Key.
 1. On the api/publishing.php update the following.
 
 $streamName = "YOUR_STREAM_NAME";
+
 $publishingToken = "YOUR_PUBLISHING_TOKEN";
 
 Once your conference is live you can start publishing the confernece in with Dolby Realtime Streaming 
