@@ -23,6 +23,7 @@ Update the Appkey and App Secret located in the api/keys/capikeys.php file.
 Start hosting the confernece on your site
 
 Included is the API Calls to publish your confernece to a large audience.
+
 You will want update the api/keys/sapi/sapikeys.php with your Streaming API Key.
 
 1. On the api/publishing.php update the following.
@@ -32,10 +33,13 @@ $streamName = "YOUR_STREAM_NAME";
 $publishingToken = "YOUR_PUBLISHING_TOKEN";
 
 Once your conference is live you can start publishing the confernece in with Dolby Realtime Streaming 
+
 Open this URL https:/YOUR_WEB_SITE.com/conference/api/publish.php
+
 Open your viewer link from the Dolby Real Time Streaming Portal.
 
 https://viewer.millicast.com/?streamId=accountID/StreamName 
+
 StreamName should math the name created in your conference/api/publish.php file.
 
 You can stop the live stream.
