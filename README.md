@@ -40,5 +40,10 @@ StreamName should math the name created in your conference/api/publish.php file.
 You can stop the live stream.
 Open this URL https:/YOUR_WEB_SITE.com/conference/api/stop.php
 
+NOTES.
+For iOs iPhone use Safari. Join Room then enable camera.
+Chrome on iOS will have error.
+
+
 
 
