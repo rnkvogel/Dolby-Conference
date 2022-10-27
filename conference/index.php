@@ -1,8 +1,6 @@
 <?php
+require 'api/keys/capikeys.php';
 $url_vox = 'https://session.voxeet.com/v1/oauth2/token';
-$dolby_key = 'APP_KEY';
-$dolby_secret = 'APP_SECRET';
-$credentials = 'Authorization: Basic ' . base64_encode($dolby_key . ':' .  $dolby_secret) ;
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url_vox);
 curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
@@ -33,5 +31,6 @@ $conference = 'https://dolbyio-samples.github.io/comms-conference-app/?token=' .
 <body onload="window.open('<?php echo $conference ?>' ,'_self');">
 </body>
 </html>
+
 
 
