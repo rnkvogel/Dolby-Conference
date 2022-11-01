@@ -5,7 +5,7 @@ This allow you to quickly test Dolby Conference and Realtime Streaming to an lar
 
 Perfect for sites that are already using WordPress!!
 
-This is using Git HUb React Build and can be opened under the demos settings
+This is using Git Hub React Build and can be opened under the demos settings
 https://github.com/dolbyio-samples/comms-conference-app
 
 Steps
