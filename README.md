@@ -1,6 +1,6 @@
 # Dolby-Conference PHP Sites NO CODE EMBED
 Dolby Conference , Your Site, Your Keys, NO CODE
-This allow you to quickly test Dolby CConference and Realtime Streaming to an large audience with No Coding.
+This allow you to quickly test Dolby Conference and Realtime Streaming to an large audience with No Coding.
 
 
 Perfect for sites that are already using WordPress!!
